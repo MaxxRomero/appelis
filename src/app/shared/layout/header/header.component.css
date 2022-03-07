@@ -1,0 +1,37 @@
+.container{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.mtool{
+    position: relative;
+    z-index: 2;
+    background-color: #1b262c;
+    box-shadow: 0px 5px 15px 5px rgba(0,0,0,.5);
+}
+
+span {
+    color: #bbe1fa;
+}
+
+img {
+    background-color: #FAFAFA;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #bbe1fa;
+    font-size: 16px;
+    margin: 10px;
+}
+
+a:hover{
+    color:#3282b8;
+    transition: all 0.1s linear 0.1s;
+}

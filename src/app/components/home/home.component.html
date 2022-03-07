@@ -1,0 +1,14 @@
+<app-header></app-header>
+
+<div *ngIf="arrowToggle" class="arrow" (click)="scrollTop()">
+    <img src="../../../assets/img/up-arrow.png" alt="">
+</div>
+
+<app-slideshow></app-slideshow>
+
+<div class="container">
+    <div>
+        <app-searcher class="searcher"></app-searcher>
+        <app-pelis></app-pelis>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<mat-grid-list cols="6" rowHeight="250px" gutterSize="10px">
+    <mat-grid-tile *ngFor="let movie of movies" class="mat">
+        <div matTooltip="{{ movie.title }} ({{ movie.release_date | date:'yyyy' }})" 
+        matTooltipPosition="above"  
+        matTooltipClass="tooltip"
+        class="image">
+            <img class="image__img" src="{{ img }}{{ movie.poster_path }}" alt="">
+            <div class="image__overlay">
+                <div class="image__title"><img src="../../../assets/img/star.png" class="star" alt=""><h1>{{ movie.vote_average | number:'1.1-2'}}</h1></div>
+                <p class="image__description">More Details</p>
+            </div>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>

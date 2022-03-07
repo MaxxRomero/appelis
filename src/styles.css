@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+html{scroll-behavior: smooth;}
+html, body { height: 100%;}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background: rgb(27,38,44);
+    background: linear-gradient(0deg, rgba(27,38,44,1) 21%, rgba(15,76,117,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #bbe1fa;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

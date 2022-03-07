@@ -1,0 +1,15 @@
+<div class="most-popular"><h3>Most popular</h3></div>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div *ngFor="let movie of popular" class="swiper-slide" [ngStyle]=slideshowStyles(movie.poster_path)>
+            <div class="movie-description" (click)="movieDetail(movie.title)">
+                <h2>{{ movie?.title }} ({{ movie?.release_date | date: 'yyyy' }})</h2>
+                <p>{{ movie?.overview | slice:0:130 }}...</p>
+            </div>
+        </div>
+    </div>
+
+    <div (click)="onSlidePrev()" class="swiper-button-prev swiper-button-white"></div>
+    <div (click)="onSlideNext()" class="swiper-button-next swiper-button-white" style="margin-right: 20px;"></div>
+</div>
